@@ -1,0 +1,36 @@
+.container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       height: 100vh;
+     }
+     
+     #process-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+     
+     .process-symbol {
+       width: 200px;
+       height: 200px;
+       border: 1px solid black;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+     }
+     
+     input[type="text"] {
+       width: 80%;
+       height: 50%;
+       margin-bottom: 20px;
+     }
+     
+     button {
+       margin-top: 20px;
+       font-size: 1.5em;
+     }
+     
