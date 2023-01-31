@@ -48,12 +48,9 @@
      button {
       margin-top: -2px;
        font-size: 1.5em;
-<<<<<<< HEAD:style.css
        border-radius: 45%;
        box-shadow: 0px 0px 2px 2px rgb(65, 105, 225);
-=======
-       border-radius: 100%;
->>>>>>> ac7683574bf98e37680ecde388320696e783ac72:NassiPy/src/style.css
+       align-items: center;
      }
      
      button:hover {
