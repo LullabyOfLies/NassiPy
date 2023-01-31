@@ -1,0 +1,22 @@
+{
+  "name": "nassipy",
+  "version": "1.0.0",
+  "description": "- Do\r - You \r - Me\r - i",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LullabyOfLies/NassiPy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LullabyOfLies/NassiPy/issues"
+  },
+  "homepage": "https://github.com/LullabyOfLies/NassiPy#readme",
+  "dependencies": {
+    "jspython-interpreter": "^2.1.13"
+  }
+}
