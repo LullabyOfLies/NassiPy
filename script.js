@@ -8,6 +8,15 @@ addProcessButton.addEventListener("click", function() {
   processInput.type = "text";
   processInput.placeholder = "Process";
   processSymbol.appendChild(processInput);
+  const symbolType = document.createElement("select");
+  symbolType.classList.add("symbol-type");
+  symbolType.innerHTML = `
+    <option value="process">Process</option>
+    <option value="decision">Decision</option>
+    <option value="input-output">Input/Output</option>
+    <option value="connector">Connector</option>
+  `;
+  processSymbol.appendChild(symbolType);
   const deleteProcessButton = document.createElement("button");
   deleteProcessButton.classList.add("delete-process");
   deleteProcessButton.innerHTML = "&times;";
