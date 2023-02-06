@@ -759,12 +759,22 @@ features
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  
+  .features-small-item
+  .features-small-item .icon 
+  .features-small-item .icon .i{
+      width: 100%;
+
+  }
+}
 .features-small-item:hover .icon {
   background-color: #ff589e;
 
 }
 
 .features-small-item .icon {
+  
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
