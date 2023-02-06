@@ -290,6 +290,7 @@ body {
 }
 
 a.main-button-slider {
+  z-index: 3;
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
@@ -629,6 +630,7 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
+  z-index: 1;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -759,7 +761,7 @@ features
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   
   .features-small-item
   .features-small-item .icon 
@@ -824,6 +826,7 @@ features
 }
 
 .home-feature {
+  z-index: -1;
   padding-bottom: 0px;
   padding-top: 30px;
   margin-top: -220px;
