@@ -15,7 +15,7 @@ Table of contents
 05. welcome
 06. features
 07. team
-08. pricing
+08. functioning
 09. blog
 10. contact
 11. footer
@@ -1193,10 +1193,10 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+functioning
 --------------------------------------------- 
 */
-.pricing-item {
+.functioning-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -1205,38 +1205,38 @@ pricing
   padding: 30px 0px 40px 0px;
 }
 
-.pricing-item.active .pricing-header {
+.functioning-item.active .functioning-header {
   position: relative;
 }
 
-.pricing-item.active .pricing-header .pricing-title {
+.functioning-item.active .functioning-header .functioning-title {
   color: #1e1e1e;
 }
 
-.pricing-item.active .pricing-body .price-wrapper {
+.functioning-item.active .functioning-body .function-wrapper {
   background-color: #ff589e;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .currency {
+.functioning-item.active .functioning-body .function-wrapper .currency {
   color: #fff;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .price {
+.functioning-item.active .functioning-body .function-wrapper .function {
   color: #fff;
 }
 
-.pricing-item.active .pricing-body .price-wrapper .period {
+.functioning-item.active .functioning-body .function-wrapper .period {
   color: #fff;
 }
 
-.pricing-item .pricing-header {
+.functioning-item .functioning-header {
   text-align: center;
   display: block;
   position: relative;
   padding-bottom: 10px;
 }
 
-.pricing-item .pricing-header .pricing-title {
+.functioning-item .functioning-header .functioning-title {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.25px;
@@ -1249,11 +1249,11 @@ pricing
   margin: auto;
 }
 
-.pricing-item .pricing-body {
+.functioning-item .functioning-body {
   margin-bottom: 40px;
 }
 
-.pricing-item .pricing-body .price-wrapper {
+.functioning-item .functioning-body .function-wrapper {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 13px;
@@ -1265,7 +1265,7 @@ pricing
   border-radius: 20px;
 }
 
-.pricing-item .pricing-body .price-wrapper .currency {
+.functioning-item .functioning-body .function-wrapper .currency {
   height: 47px;
   font-weight: 500;
   font-size: 32px;
@@ -1274,13 +1274,13 @@ pricing
   top: -1px;
 }
 
-.pricing-item .pricing-body .price-wrapper .price {
+.functioning-item .functioning-body .function-wrapper .function {
   font-weight: 500;
   font-size: 28px;
   color: #fff;
 }
 
-.pricing-item .pricing-body .price-wrapper .period {
+.functioning-item .functioning-body .function-wrapper .period {
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -1288,7 +1288,7 @@ pricing
   letter-spacing: 0.88px;
 }
 
-.pricing-item .pricing-body .list li {
+.functioning-item .functioning-body .list li {
   text-align: center;
   margin-bottom: 12px;
   font-weight: 400;
@@ -1298,12 +1298,12 @@ pricing
   text-decoration: line-through;
 }
 
-.pricing-item .pricing-body .list li.active {
+.functioning-item .functioning-body .list li.active {
   color: #7a7a7a;
   text-decoration: none;
 }
 
-.pricing-item .pricing-footer {
+.functioning-item .functioning-footer {
   text-align: center;
   margin-top: 50px;
 }
