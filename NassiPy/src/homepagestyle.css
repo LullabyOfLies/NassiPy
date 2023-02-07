@@ -59,12 +59,14 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: white;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 a {
   text-decoration: none !important;
@@ -86,17 +88,17 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: skyblue;
   font-family: "Raleway", sans-serif;
 }
 
 ::selection {
-  background: #ff589e;
+  background: skyblue;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ff589e;
+  background: skyblue;
   color: #fff;
 }
 
@@ -290,6 +292,7 @@ body {
 }
 
 a.main-button-slider {
+  z-index: 3;
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
@@ -629,6 +632,7 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
+  z-index: 1;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -759,7 +763,7 @@ features
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   
   .features-small-item
   .features-small-item .icon 
@@ -824,6 +828,7 @@ features
 }
 
 .home-feature {
+  z-index: -1;
   padding-bottom: 0px;
   padding-top: 30px;
   margin-top: -220px;
@@ -878,14 +883,21 @@ parallax & home seperator
 
 .flex-container{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
+
+
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   .flex-container {
-    flex:100%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    
   }
 }
 
@@ -1217,7 +1229,7 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+functioning
 --------------------------------------------- 
 */
 .nassipyfunction {
@@ -1228,6 +1240,8 @@ pricing
   margin-top: 20px;
   padding: 30px 0px 40px 0px;
 }
+
+
 
 .nassipyfunction.active .nsdheader {
   position: relative;
@@ -1245,7 +1259,7 @@ pricing
   color: #fff;
 }
 
-.nassipyfunction.active .nsdbody .nsdwrapper .price {
+.nassipyfunction.active .nsdbody .nsdwrapper .function {
   color: #fff;
 }
 
@@ -1264,13 +1278,14 @@ pricing
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.25px;
-  color: #1e1e1e;
+  color: whitesmoke;
   width: 180px;
   height: 40px;
   line-height: 40px;
   left: 0px;
   right: 0px;
   margin: auto;
+  border-radius: 15px;
 }
 
 .nassipyfunction .nsdbody {
@@ -1298,7 +1313,7 @@ pricing
   top: -1px;
 }
 
-.nassipyfunction .nsdbody .nsdwrapper .price {
+.nassipyfunction .nsdbody .nsdwrapper .function {
   font-weight: 500;
   font-size: 28px;
   color: #fff;
@@ -1315,9 +1330,9 @@ pricing
 .nassipyfunction .nsdbody .list li {
   text-align: center;
   margin-bottom: 12px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 13px;
-  color: #7a7a7a;
+  color: solid black;
   letter-spacing: 0.25px;
   text-decoration: line-through;
 }
@@ -1328,7 +1343,7 @@ pricing
   text-decoration: none;
 }
 
-.nassipyfunction .pricing-footer {
+.nassipyfunction .functioning-footer {
   text-align: center;
   margin-top: 50px;
 }

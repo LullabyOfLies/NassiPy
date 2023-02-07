@@ -1207,7 +1207,7 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+functioning
 --------------------------------------------- 
 */
 .nassipyfunction {
@@ -1235,7 +1235,7 @@ pricing
   color: #fff;
 }
 
-.nassipyfunction.active .nsdbody .nsdwrapper .price {
+.nassipyfunction.active .nsdbody .nsdwrapper .function {
   color: #fff;
 }
 
@@ -1288,7 +1288,7 @@ pricing
   top: -1px;
 }
 
-.nassipyfunction .nsdbody .nsdwrapper .price {
+.nassipyfunction .nsdbody .nsdwrapper .function {
   font-weight: 500;
   font-size: 28px;
   color: #fff;
@@ -1318,7 +1318,7 @@ pricing
   text-decoration: none;
 }
 
-.nassipyfunction .pricing-footer {
+.nassipyfunction .functioning-footer {
   text-align: center;
   margin-top: 50px;
 }
