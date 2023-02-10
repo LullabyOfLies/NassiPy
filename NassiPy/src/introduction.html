@@ -3,6 +3,7 @@
 
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -19,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="/NassiPy/src/font-awesome.css">
 
-    <link rel="stylesheet" href="/NassiPy/src/homepagestyle.css">
+    <link rel="stylesheet" href="/NassiPy/src/introductionstyle.css">
 
     </head>
     
@@ -59,21 +60,26 @@
 
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
-
         <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>Starting to learn <strong>Programming</strong><br>to grow up your <strong>skill</strong></h1>
-                        <p>NassiPy aim to help newbies of the different field of study to understand the logic flow and thought process in solving problems systematically by constructing a diagram and running it through an interpreter for possible errors. </p>
-                        <a href="#features" class="main-button-slider">Discover More</a>
-                    </div>
+        <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="why">Why should you learn NSD?</div>
                 </div>
+                <div class="col-sm-6">
+                  <img class="mySlides" src="/NassiPy/assets/images/bg2.jpg">
+                  <img class="mySlides" src="/NassiPy/assets/images/bg1.jpg">
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                  <!-- class="img-fluid -->
+                </div>
+              </div>
             </div>
+            
         </div>
+        
         <!-- ***** Header Text End ***** -->
-    </div>
+   
     <!-- ***** Welcome Area End ***** -->
 
     <!-- ***** Features Small Start ***** -->
@@ -365,6 +371,27 @@
     
     <!-- Global Init -->
     <script src="/NassiPy/assets/js/custom.js"></script>
+
+    <!-- slideshow -->
+    <script>
+       var slideIndex = 1;
+       showDivs(slideIndex);
+       
+       function plusDivs(n) {
+         showDivs(slideIndex += n);
+       }
+       
+       function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         if (n > x.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = x.length}
+         for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+         }
+         x[slideIndex-1].style.display = "block";  
+       }
+       </script>
 
   </body>
 </html>
