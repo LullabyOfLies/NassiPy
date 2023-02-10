@@ -638,20 +638,21 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
-  height: 100vh;
+  height: 150vh;
 }
 .mySlides {display:none;}
 
 .welcome-area .header-text {
-  position: absolute;
-  top: 45%;
+  position: relative;
+  top: 30%;
   transform: translateY(-55%);
-  text-align: center;
+  align-items: center;
+  justify-items: center;
   width: 100%;
+ 
 }
 
 .welcome-area .header-text h1 {
