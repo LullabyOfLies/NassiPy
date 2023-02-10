@@ -638,13 +638,13 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/NassiPy/assets/images/bg1.jpg);
-  opacity: 1;
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
   height: 100vh;
 }
+.mySlides {display:none;}
 
 .welcome-area .header-text {
   position: absolute;

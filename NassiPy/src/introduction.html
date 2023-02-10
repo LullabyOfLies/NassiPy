@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="/NassiPy/src/font-awesome.css">
 
-    <link rel="stylesheet" href="/NassiPy/src/homepagestyle.css">
+    <link rel="stylesheet" href="/NassiPy/src/introductionstyle.css">
 
     </head>
     
@@ -64,10 +64,22 @@
         <div class="header-text">
             <div class="container">
                 <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>Starting to learn <strong>Programming</strong><br>to grow up your <strong>skill</strong></h1>
-                        <p>NassiPy aim to help newbies of the different field of study to understand the logic flow and thought process in solving problems systematically by constructing a diagram and running it through an interpreter for possible errors. </p>
-                        <a href="#features" class="main-button-slider">Discover More</a>
+                    <div class="col-sm-6">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="w3-content w3-display-container">
+                            <img class="mySlides" src="/NassiPy/assets/images/bg1.jpg" style="width:100%">
+                            <img class="mySlides" src="/NassiPy/assets/images/bg2.jpg" style="width:100%">
+                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                          </div>
+                      </div>
+                    
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -348,8 +360,26 @@
         </div>
     </footer>
     
-    <!-- Darkmode  -->
-   
+ 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
 
     <!-- jQuery -->
     <script src="/NassiPy/assets/js/jquery-2.1.0.min.js"></script>
@@ -366,5 +396,6 @@
     <!-- Global Init -->
     <script src="/NassiPy/assets/js/custom.js"></script>
 
+    
   </body>
 </html>
