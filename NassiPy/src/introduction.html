@@ -3,7 +3,6 @@
 
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,7 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="/NassiPy/src/font-awesome.css">
 
-    <link rel="stylesheet" href="/NassiPy/src/introductionstyle.css">
+    <link rel="stylesheet" href="/NassiPy/src/homepagestyle.css">
 
     </head>
     
@@ -60,50 +59,70 @@
 
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
-        <!-- ***** Header Text Start ***** -->
-        <div class="container">
-              <div class="row">
-                <div class="col-sm-6 w3-green">
-                  <div class="why">Why should you learn NSD?</div>
-                </div>
-                <div class="col-sm-6 w3-red">
-                    <div class="slideshow-container">
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="/NassiPy/assets/images/bg1.jpg" style="width:100%">
-                            <div class="text">Caption Text</div>
-                          </div>
-                          
-                          <div class="mySlides fade">
-                            <div class="numbertext">2 /2</div>
-                            <img src="/NassiPy/assets/images/bg2.jpg" style="width:100%">
-                            <div class="text">Caption Two</div>
-                          </div>
-                          
-                          
-                          </div>
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        <h1>Starting to learn <strong>Programming</strong><br>to grow up your <strong>skill</strong></h1>
+                        <p>NassiPy aim to help newbies of the different field of study to understand the logic flow and thought process in solving problems systematically by constructing a diagram and running it through an interpreter for possible errors. </p>
+                        <a href="#features" class="main-button-slider">Discover More</a>
                     </div>
-                  <!-- class="img-fluid -->
-                  </div>
                 </div>
-              </div>
-            
-            
-        
-        
+            </div>
+        </div>
         <!-- ***** Header Text End ***** -->
-   
+    </div>
     <!-- ***** Welcome Area End ***** -->
 
-     
-    <!-- ***** Features Small End ***** -->
+    <!-- ***** Features Small Start ***** -->
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/introduce.png" alt="" width="56px" height="48px"></i>
+                                </div>
+                                <h5 class="features-title">Introduce to the world of Programming</h5>
+                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
 
-    <div class="vid1">
-        <video width="560" height="240" controls autoplay>
-            <source src="/NassiPy/assets/videos/Zoolander Stare - Original Scene.mp4">
-        </video>
-    </div>
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/learn1.png" alt="" width="56px" height="48px"></i>
+                                </div>
+                                <h5 class="features-title">Learn fundamentals of problem-solving</h5>
+                                <p style="font-size: 80%">Problem-solving for programming involves analyzing and solving complex issues in software creation through critical thinking and systematic approach.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/apply.png" alt="" width="56px" height="45px"></i>
+                                </div>
+                                <h5 class="features-title">Apply what you learn on you own</h5>
+                                <p style="font-size: 80%">Applying what you learn in problem-solving involves using skills and knowledge to effectively tackle real-world challenges through critical thinking and decision making.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
     <section class="section padding-top-70 padding-bottom-0" id="features" style="background-color: skyblue;">
@@ -329,7 +348,7 @@
         </div>
     </footer>
     
-
+    <!-- Darkmode  -->
    
 
     <!-- jQuery -->
@@ -346,29 +365,6 @@
     
     <!-- Global Init -->
     <script src="/NassiPy/assets/js/custom.js"></script>
-
-    <!-- slideshow -->
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        </script>
 
   </body>
 </html>
