@@ -88,7 +88,7 @@ global styles
 */
 html,
 body {
-  background: skyblue;
+  background: darkslategrey;
   font-family: "Lato", sans-serif;
 }
 
@@ -777,10 +777,15 @@ features
   margin-bottom: 30px;
 }
 
+video {
+  width: 100% !important;
+  height: 202.5px !important;
+}
+
 @media screen and (max-width: 720px) {
   
   .features-small-item
-  .features-small-item .icon 
+  .features-small-item .video 
   .features-small-item .icon .i{
       width: 100%;
 
