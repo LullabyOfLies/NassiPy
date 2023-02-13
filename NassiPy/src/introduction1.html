@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="/NassiPy/src/font-awesome.css">
 
     <link rel="stylesheet" href="/NassiPy/src/introduction1style.css">
+    
 
     </head>
     
@@ -62,13 +63,13 @@
     <div class="welcome-area" id="welcome">
         <!-- ***** Header Text Start ***** -->
         <div class="header-text">
-              <div class="container-fluid" style="padding-top: 200px;" >
-                  <div class="row" style="padding-bottom: 5px;">
-                      <div class="col-sm-6" >
-                          <p style="font-size: 20px; font-family: 'Lato', sans-serif; font; font-family: 'PT Serif', serif; color: skyblue; letter-spacing: 5px; text-indent: 5px;; padding-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="container-fluid" style="border">
+                  <div class="row">
+                      <div class="col-sm-6" style="display: grid; place-items: center;">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt perferendis ex, aspernatur quibusdam vitae, consequuntur delectus asperiores, iure cupiditate et sit omnis. Possimus, eveniet aspernatur nobis animi error recusandae!</p>
                         </div>
-                        <div class="col-sm-6" style="display: grid; place-items: center;">
+                        <div class="col-sm-6" style="display: grid; place-items: center; >
                           <div class="w3-content w3-display-container " style="padding-bottom: 20px;">
                             <img class="mySlides" src="/NassiPy/assets/images/bg1.jpg" style="width:100%">
                             <img class="mySlides" src="/NassiPy/assets/images/bg2.jpg" style="width:100%">
@@ -84,8 +85,8 @@
     <!-- ***** Welcome Area End ***** -->
 
     <!-- ***** Features Small Start ***** -->
-    <section class="section home-feature">
-        <div class="container">
+    <section class="section home-feature" style="margin-top: 10px;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
@@ -234,8 +235,8 @@
     </section>
     <!-- ***** Features Big Item End ***** -->
 
-    <!-- ***** Home Parallax Start ***** -->
-    <section class="mini" id="work-process">
+    <!-- Commented the mini section due to verbose overflow (poor loading performance) reason : too many elements-->
+    <!-- <section class="mini" id="work-process">
         <div class="mini-content">
             <div class="container">
                 <div class="row">
@@ -288,7 +289,7 @@
                 <!-- ***** Mini Box End ***** -->
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Home Parallax End ***** -->
 
   
@@ -411,7 +412,23 @@
         </div>
     </footer>
     
- 
+    <!-- jQuery -->
+    <script src="/NassiPy/assets/js/jquery-2.1.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/NassiPy/assets/js/popper.js"></script>
+    <script src="/NassiPy/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/NassiPy/assets/js/scrollreveal.min.js"></script>
+    <script src="/NassiPy/assets/js/waypoints.min.js"></script>
+    <script src="/NassiPy/assets/js/jquery.counterup.min.js"></script>
+    <script src="/NassiPy/assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+   
+    <script src="/NassiPy/assets/js/custom.js"></script>
+    
+
     <script>
         var myIndex = 0;
         carousel();
@@ -428,22 +445,6 @@
           setTimeout(carousel, 10000); // Change image every 2 seconds
         }
         </script>
-
-    <!-- jQuery -->
-    <script src="/NassiPy/assets/js/jquery-2.1.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="/NassiPy/assets/js/popper.js"></script>
-    <script src="/NassiPy/assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="/NassiPy/assets/js/scrollreveal.min.js"></script>
-    <script src="/NassiPy/assets/js/waypoints.min.js"></script>
-    <script src="/NassiPy/assets/js/jquery.counterup.min.js"></script>
-    <script src="/NassiPy/assets/js/imgfix.min.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="/NassiPy/assets/js/custom.js"></script>
-
     
   </body>
 </html>

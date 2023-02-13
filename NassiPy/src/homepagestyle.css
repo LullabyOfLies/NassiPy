@@ -886,7 +886,7 @@ parallax & home seperator
 .container-fluid{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0px;
   position: relative;
   
