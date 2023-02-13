@@ -644,6 +644,8 @@ welcome
   background-position: center center;
   background-size: cover; 
   height: 100vh;
+  max-width: 100%;
+ 
 }
 
 .welcome-area .header-text {
@@ -881,22 +883,24 @@ parallax & home seperator
 
 }
 
-.flex-container{
+.container-fluid{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-
+  justify-content: space-around;
+  padding: 0px;
+  position: relative;
+  
 }
 
 
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 720px) {
-  .flex-container {
-    display: flex;
+@media (max-width: 1000px) {
+  .container-fluid {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     
   }
 }
