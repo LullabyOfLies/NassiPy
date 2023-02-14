@@ -895,6 +895,7 @@ parallax & home seperator
   padding-top: 90px;
   padding-bottom: 90px;
   display: flex;
+  justify-content: center;
 }
 
 .mini:before {
@@ -921,6 +922,7 @@ parallax & home seperator
 }
 
 .flex-container{
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
