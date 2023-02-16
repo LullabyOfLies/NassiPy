@@ -56,7 +56,7 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
+html, body, h4{
   font-family: 'Lato', 'PT Serif';
   font-weight: 400;
   background-color: #3b2f3c;
@@ -664,6 +664,10 @@ welcome
   padding-bottom: 200px;
   margin-right: 50px;
   margin-left: 50px;
+  border-style: groove;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #343143;
   
 }
 .welcome-area .header-text .container-fluid{
@@ -691,7 +695,7 @@ welcome
   position: relative;
   font-size: clamp(0.9375rem, -0.2344rem + 3.75vw, 1.875rem); 
    font-family: 'PT Serif', serif; 
-  color: skyblue; letter-spacing: 5px; text-indent: 5px;  border-style: ridge;"
+  color: white; letter-spacing: 5px; text-indent: 5px; 
   
 }
 
@@ -709,6 +713,8 @@ welcome
     transform: perspective(1px) translateY(-80%) !important;
     text-align: center;
     justify-content: center;
+    border-style: groove;
+    border-radius: 30px;
   }  
   
   .welcome-area .header-text p {
@@ -781,7 +787,7 @@ features
 .features-small-item {
   cursor: pointer;
   display: block;
-  background: #FFFFFF;
+  background: #343143;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -794,7 +800,10 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
+  color: white;
 }
+
+
 
 video {
   width: 100% !important;
@@ -871,8 +880,20 @@ video {
   padding-top: 40px;
   margin-top: -220px;
   z-index: 9;
-  background-color: darkgrey;
+  background-color: #3b2f3c;
 }
+
+.home-feature .inform{
+  z-index: 1;
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+
 
 @media (max-width: 991px) {
   .home-feature {
