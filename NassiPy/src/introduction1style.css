@@ -429,7 +429,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #fff;
+  color: #ff589e;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -441,6 +441,7 @@ header
 }
 
 .header-area .main-nav .nav li a:hover {
+  background-color: transparent;
   color: #ff589e;
 }
 
