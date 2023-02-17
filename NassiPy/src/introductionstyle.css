@@ -5,13 +5,13 @@
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&family=PT+Serif:ital,wght@1,700&display=swap');
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 figure, header, nav, section, article, aside, footer, figcaption {
@@ -56,10 +56,10 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'PT Serif', serif;
+html, body, h4{
+  font-family: 'Lato', 'PT Serif';
   font-weight: 400;
-  background-color: white;
+  background-color: #3b2f3c;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -88,17 +88,17 @@ global styles
 */
 html,
 body {
-  background: skyblue;
-  font-family: "Raleway", sans-serif;
+  background: #3b2f3c;
+  font-family: "Lato", sans-serif;
 }
 
 ::selection {
-  background: skyblue;
+  background: darkgrey;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: skyblue;
+  background: darkgrey;
   color: #fff;
 }
 
@@ -106,11 +106,11 @@ body {
   position: relative;
   padding-top: 100px;
   padding-bottom: 80px;
-  background: skyblue;
+  background: darkgrey;
 }
 
 .section.colored {
-  background: skyblue;
+  background: darkgrey;
 }
 
 .hr {
@@ -275,7 +275,7 @@ body {
   margin-bottom: 100px !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 720px) {
   html, body {
     overflow-x: hidden;
   }
@@ -573,8 +573,11 @@ header
     box-shadow: none;
     text-align: center;
   }
-  .header-area .container {
+  .header-area .container-fluid{
+    display: flex;
     padding: 0px;
+    width: 100%;
+
   }
   .header-area .logo {
     margin-top: 27px !important;
@@ -638,87 +641,119 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #3b2f3c;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
-  height: 150vh;
+  padding-bottom: 100px;
+
+  /* margin: 50px;
+  padding-top: 200px;   */
+/* wala yung padding kaya nakaangat  */
 }
+
 .mySlides {display:none;}
 
 .welcome-area .header-text {
+  display: flex;
   position: relative;
-  top: 30%;
-  transform: translateY(-55%);
+  /* transform: translateY(-65%); */
   align-items: center;
   justify-items: center;
-  width: 100%;
- 
+  margin-top: 500px; 
+  padding-bottom: 200px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-style: groove;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #343143;
+  
+}
+.welcome-area .header-text .container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.welcome-area .header-text h1 {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 54px;
-  letter-spacing: 1.4px;
-  margin-bottom: 0px;
-  color: #fff;
+.header-space{
+  z-index: 1;
+  position: relative;
+  display: none;
+  background-color: pink;
 }
+
+
 
 .welcome-area .header-text p {
+  display: flex;
   font-weight: 400;
-  font-size: 15px;
-  color: #fff;
   line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 10px;
   position: relative;
+  font-size: clamp(0.9375rem, -0.2344rem + 3.75vw, 1.875rem); 
+   font-family: 'PT Serif', serif; 
+  color: white; letter-spacing: 5px; text-indent: 5px; 
+  
 }
 
-@media (max-width: 991px) {
-  .welcome-area .header-text {
-    top: 65% !important;
-    transform: perspective(1px) translateY(-60%) !important;
+
+
+
+@media (max-width: 820px) {
+   .welcome-area{
+    flex-direction: column;
+    width: 100%;
+    
+  } 
+  .welcome-area .header-text { 
+    top: 30% !important;
+    transform: perspective(1px) translateY(-80%) !important;
     text-align: center;
-  }
-  .welcome-area .header-text h1 {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 15px;
-  }
-  .welcome-area .header-text h1 span {
-    color: #fff;
-  }
+    justify-content: center;
+    border-style: groove;
+    border-radius: 30px;
+  }  
+  
   .welcome-area .header-text p {
     text-align: center;
     color: #fff;
     margin-bottom: 20px;
+    
   }
+   .welcome-area .header-text .container-fluid{
+    flex-direction: column;
+    padding-top: 200px;
+  }
+   
 }
 
 @media (max-width: 820px) {
   .welcome-area .header-text {
-    top: 65% !important;
-    transform: perspective(1px) translateY(-60%) !important;
-  }
+    top: 50% !important;
+    transform: perspective(1px) translateY(-90%) !important;
+    padding: 0;
+    flex-direction: column;
+  } 
    .welcome-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .welcome-area .header-text p {
-    margin-bottom: 20px;
-  }
+ 
 }
 
-@media (max-width: 765px) {
-  .welcome-area {
-    margin-bottom: 100px;
-  }
+
+@media (max-width: 820px) {
+ 
   .welcome-area .header-text {
-    top: 50% !important;
+    top: 30% !important;
     transform: perspective(1px) translateY(-50%) !important;
     text-align: center;
-  }
+    flex-direction: column;
+  } 
   .welcome-area .header-text .buttons {
     display: none;
   }
@@ -738,7 +773,10 @@ welcome
     line-height: 22px;
     margin-bottom: 40px;
   }
+  
+  
 }
+
 
 
 /* 
@@ -749,7 +787,7 @@ features
 .features-small-item {
   cursor: pointer;
   display: block;
-  background: #FFFFFF;
+  background: #343143;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -762,12 +800,20 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
+  color: white;
+}
+
+
+
+video {
+  width: 100% !important;
+  height: 202.5px !important;
 }
 
 @media screen and (max-width: 720px) {
   
   .features-small-item
-  .features-small-item .icon 
+  .features-small-item .video 
   .features-small-item .icon .i{
       width: 100%;
 
@@ -790,7 +836,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: skyblue;
+  background: darkgrey;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -831,11 +877,23 @@ features
 .home-feature {
   z-index: -1;
   padding-bottom: 0px;
-  padding-top: 30px;
+  padding-top: 40px;
   margin-top: -220px;
   z-index: 9;
-  background-color: skyblue;
+  background-color: #3b2f3c;
 }
+
+.home-feature .inform{
+  z-index: 1;
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+
 
 @media (max-width: 991px) {
   .home-feature {
@@ -857,6 +915,8 @@ parallax & home seperator
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
 }
 
 .mini:before {
@@ -883,6 +943,7 @@ parallax & home seperator
 }
 
 .flex-container{
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -892,7 +953,7 @@ parallax & home seperator
 
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 720px) {
+@media (max-width: 550px) {
   .flex-container {
     display: flex;
     align-items: center;
@@ -914,6 +975,7 @@ parallax & home seperator
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 5px;
+  flex-direction: column;
 }
 
 .mini .mini-content .info strong {

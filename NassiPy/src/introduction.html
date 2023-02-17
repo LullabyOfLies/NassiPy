@@ -3,12 +3,13 @@
 
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Webpage tab icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/NassiPy/assets/images/logo_transparent.png" />
 
@@ -19,7 +20,8 @@
 
     <link rel="stylesheet" type="text/css" href="/NassiPy/src/font-awesome.css">
 
-    <link rel="stylesheet" href="/NassiPy/src/introductionstyle.css">
+    <link rel="stylesheet" href="/NassiPy/src/introduction1style.css">
+    
 
     </head>
     
@@ -40,7 +42,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="homepage.html" class="active">Home</a></li>
-                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="introduction1.html">Introduction</a></li>
                             <li><a href="#">Activities Page</a></li>
                             <li><a href="#">Playground</a></li>
                             <li><a href="#">About </a></li>
@@ -59,60 +61,107 @@
 
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
-
         <!-- ***** Header Text Start ***** -->
         <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </div>
-                      
-                      <div class="col-sm-6">
-                        <div class="w3-content w3-display-container">
+              <div class="container-fluid" style="border">
+                  <div class="row">
+                      <div class="col-sm-6" style="display: grid; place-items: center;">
+                          <p>NassiPy is a web application that teaches non-technical individuals how to program and solve problems.<br><br> Our easy-to-follow guides and practical examples are designed for beginners and those with some experience. <br><br> NassiPy can help you improve your problem-solving skills and take your abilities to the next level.<br><br> Start learning with NassiPy today and unlock your potential!</p>
+                        </div>
+                        <div class="col-sm-6" style="display: grid; place-items: center; >
+                          <div class="w3-content w3-display-container " style="padding-bottom: 20px;">
                             <img class="mySlides" src="/NassiPy/assets/images/bg1.jpg" style="width:100%">
                             <img class="mySlides" src="/NassiPy/assets/images/bg2.jpg" style="width:100%">
-                            
-                          </div>
-                      </div>
+                            </div>
+                        </div>
                     
-                        
-                        
-                    </div>
-                </div>
-            </div>
+                      </div>
+                  </div>
+              </div>
         </div>
         <!-- ***** Header Text End ***** -->
-    </div>
+        
     <!-- ***** Welcome Area End ***** -->
 
     <!-- ***** Features Small Start ***** -->
-    <section class="section home-feature">
-        <div class="container">
+    <section class="section home-feature" style="margin-top: 10px;">
+        <div class="inform"><h4 style="border: groove; border-radius: 20px; padding: 10px; background-color: #343143; color: white;">Learn the fundamentals step-by-step with the help of the introductional videos below</h4></div>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <!-- ***** Features Small Item Start ***** -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
                             <div class="features-small-item">
-                                <div class="icon">
+                                <video src="/NassiPy/assets/videos/Zoolander Stare - Original Scene.mp4" controls>
+                                </video>
+                                <h3>Step 1</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
                                     <i><img src="/NassiPy/assets/images/introduce.png" alt="" width="56px" height="48px"></i>
                                 </div>
                                 <h5 class="features-title">Introduce to the world of Programming</h5>
-                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p>
+                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <video src="/NassiPy/assets/videos/Rick Astley - Never Gonna Give You Up (Remastered 4K 60fps,AI).mp4" controls>
+                                </video>
+                                <h3>Step 2</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/introduce.png" alt="" width="56px" height="48px"></i>
+                                </div>
+                                <h5 class="features-title">Introduce to the world of Programming</h5>
+                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <video src="/NassiPy/assets/videos/Michael Rosen- Noice.mp4" controls>
+                                </video>
+                                <h3>Step 3</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/introduce.png" alt="" width="56px" height="48px"></i>
+                                </div>
+                                <h5 class="features-title">Introduce to the world of Programming</h5>
+                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                
+                                <video src="/NassiPy/assets/videos/Kirin J. Callinan's - Screaming cowboy.mp4" controls>
+                                </video>
+                                <h3>Step 4</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
+                                    <i><img src="/NassiPy/assets/images/introduce.png" alt="" width="56px" height="48px"></i>
+                                </div>
+                                <h5 class="features-title">Introduce to the world of Programming</h5>
+                                <p style="font-size: 80%">Teach the basics of computer programming and is crucial for building a strong foundation in coding.</p> -->
                             </div>
                         </div>
                         <!-- ***** Features Small Item End ***** -->
 
                         <!-- ***** Features Small Item Start ***** -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                           
                             <div class="features-small-item">
-                                <div class="icon">
+                                <video src="/NassiPy/assets/videos/George Michael - Careless Whisper (Official Video).mp4" controls>
+                                </video>
+                                <h3>Step 5</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
                                     <i><img src="/NassiPy/assets/images/learn1.png" alt="" width="56px" height="48px"></i>
                                 </div>
                                 <h5 class="features-title">Learn fundamentals of problem-solving</h5>
-                                <p style="font-size: 80%">Problem-solving for programming involves analyzing and solving complex issues in software creation through critical thinking and systematic approach.</p>
+                                <p style="font-size: 80%">Problem-solving for programming involves analyzing and solving complex issues in software creation through critical thinking and systematic approach.</p> -->
                             </div>
                         </div>
                         <!-- ***** Features Small Item End ***** -->
@@ -120,11 +169,15 @@
                         <!-- ***** Features Small Item Start ***** -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                             <div class="features-small-item">
-                                <div class="icon">
+                                <video src="/NassiPy/assets/videos/Wham! - Last Christmas (Official Video).mp4" controls >
+                                </video>
+                                <h3>Step 6</h3>
+                                <p style="color:white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis totam fugiat laudantium voluptatibus magnam quo soluta ab, velit a repellendus ea? Culpa, odit dolorum ullam velit libero eaque. Consectetur, nisi.</p>
+                                <!-- <div class="icon">
                                     <i><img src="/NassiPy/assets/images/apply.png" alt="" width="56px" height="45px"></i>
                                 </div>
                                 <h5 class="features-title">Apply what you learn on you own</h5>
-                                <p style="font-size: 80%">Applying what you learn in problem-solving involves using skills and knowledge to effectively tackle real-world challenges through critical thinking and decision making.</p>
+                                <p style="font-size: 80%">Applying what you learn in problem-solving involves using skills and knowledge to effectively tackle real-world challenges through critical thinking and decision making.</p> -->
                             </div>
                         </div>
                         <!-- ***** Features Small Item End ***** -->
@@ -136,7 +189,7 @@
     <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="features" style="background-color: skyblue;">
+    <!-- <section class="section padding-top-70 padding-bottom-0" id="features" style="background-color: skyblue;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"  data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
@@ -158,11 +211,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-bottom-100">
+    <!-- <section class="section padding-bottom-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
@@ -179,10 +232,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Features Big Item End ***** -->
 
-    <!-- ***** Home Parallax Start ***** -->
+    <!-- Commented the mini section due to verbose overflow (poor loading performance) reason : too many elements-->
     <section class="mini" id="work-process">
         <div class="mini-content">
             <div class="container">
@@ -236,7 +289,7 @@
                 <!-- ***** Mini Box End ***** -->
             </div>
         </div>
-    </section>
+    </section> 
     <!-- ***** Home Parallax End ***** -->
 
   
@@ -359,7 +412,23 @@
         </div>
     </footer>
     
- 
+    <!-- jQuery -->
+    <script src="/NassiPy/assets/js/jquery-2.1.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/NassiPy/assets/js/popper.js"></script>
+    <script src="/NassiPy/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/NassiPy/assets/js/scrollreveal.min.js"></script>
+    <script src="/NassiPy/assets/js/waypoints.min.js"></script>
+    <script src="/NassiPy/assets/js/jquery.counterup.min.js"></script>
+    <script src="/NassiPy/assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+   
+    <script src="/NassiPy/assets/js/custom.js"></script>
+    
+
     <script>
         var myIndex = 0;
         carousel();
@@ -376,22 +445,6 @@
           setTimeout(carousel, 10000); // Change image every 2 seconds
         }
         </script>
-
-    <!-- jQuery -->
-    <script src="/NassiPy/assets/js/jquery-2.1.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="/NassiPy/assets/js/popper.js"></script>
-    <script src="/NassiPy/assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="/NassiPy/assets/js/scrollreveal.min.js"></script>
-    <script src="/NassiPy/assets/js/waypoints.min.js"></script>
-    <script src="/NassiPy/assets/js/jquery.counterup.min.js"></script>
-    <script src="/NassiPy/assets/js/imgfix.min.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="/NassiPy/assets/js/custom.js"></script>
-
     
   </body>
 </html>
