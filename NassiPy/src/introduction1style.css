@@ -524,8 +524,6 @@ button.main-button:hover {
   margin: 0 16px;
 }
 
- 
-
 /* loader end */
 
 /* 
@@ -827,9 +825,7 @@ welcome
   background-size: cover; 
   padding-bottom: 100px;
 
-  /* margin: 50px;
-  padding-top: 200px;   */
-/* wala yung padding kaya nakaangat  */
+
 }
 
 .mySlides {display:none;}
@@ -837,7 +833,7 @@ welcome
 .welcome-area .header-text {
   display: flex;
   position: relative;
-  /* transform: translateY(-65%); */
+
   align-items: center;
   justify-items: center;
   margin-top: 500px; 
