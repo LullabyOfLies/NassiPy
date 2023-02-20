@@ -833,7 +833,6 @@ welcome
 .welcome-area .header-text {
   display: flex;
   position: relative;
-
   align-items: center;
   justify-items: center;
   margin-top: 500px; 
