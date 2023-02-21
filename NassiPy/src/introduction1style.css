@@ -953,7 +953,181 @@ welcome
   
 }
 
+/* mini start */
 
+.mini {
+  min-height: 215px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.mini:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  opacity: .95;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #3b2f3c ;
+  opacity: 0.8;
+  z-index: 2;
+  top: -20%;
+  left: -20%;
+}
+
+.mini .mini-content {
+  position: relative;
+  z-index: 3;
+
+
+}
+
+
+
+.mini .mini-content .info {
+  display: flex;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mini .mini-content .info small {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+
+.mini .mini-content .info strong {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+
+.mini .mini-content .info h1 {
+  
+ 
+  font-weight: 500;
+  font-size: clamp(1.5625rem, 1.1719rem + 1.25vw, 1.875rem);
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+
+.mini .mini-content .info p {
+  
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: clamp(0.8125rem, 0.4219rem + 1.25vw, 1.125rem);
+  color: white;
+  
+}
+
+.mini .mini-content .info p span {
+  text-decoration: underline;
+}
+
+.mini .mini-content .mini-box {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  
+}
+
+.mini .mini-content .mini-box:hover {
+  margin-top: -10px;
+}
+
+.mini .mini-content .mini-box:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  width: 100%;
+  opacity: .15;
+  height: 100%;
+  bottom: -10px;
+  left: 0px;
+  right: -20px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.mini .mini-content .mini-box i {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.mini .mini-content .mini-box span {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  color: #777;
+  letter-spacing: .75px;
+}
+
+.mini .mini-content .mini-box strong {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+/* edit flex for row  */
+.flex-container{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .minih1, .minip,
+  .flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+}
+
+
+
+.introduce{
+  color: white;
+  font-size: clamp(0.8125rem, 0.5781rem + 0.75vw, 1rem);
+}
+
+/* mini end */
 
 /* 
 ---------------------------------------------
@@ -1086,164 +1260,9 @@ video {
 parallax & home seperator
 --------------------------------------------- 
 */
-.mini {
-  min-height: 215px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  display: flex;
-  justify-content: center;
-}
-
-.mini:before {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 140%;
-  opacity: .95;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(/NassiPy/assets/images/bg2.jpg);
-  opacity: 0.8;
-  z-index: 2;
-  top: -20%;
-  left: -20%;
-}
-
-.mini .mini-content {
-  position: relative;
-  z-index: 3;
-
-
-}
-
-.flex-container{
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
 
 
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 550px) {
-  .flex-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-}
-
-.mini .mini-content .info {
-  text-align: center;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.mini .mini-content .info small {
-  display: block;
-  font-weight: 400;
-  font-size: 13px;
-  margin-bottom: 5px;
-  flex-direction: column;
-}
-
-.mini .mini-content .info strong {
-  font-weight: 700;
-  font-size: 17px;
-  margin-bottom: 40px;
-  display: block;
-}
-
-.mini .mini-content .info h1 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 0.25px;
-  margin-bottom: 30px;
-}
-
-.mini .mini-content .info p {
-
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-  color: #fff;
-  letter-spacing: 0.25px;
-  line-height: 26px;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.mini .mini-content .info p span {
-  text-decoration: underline;
-}
-
-.mini .mini-content .mini-box {
-  width: 200px;
-  height: 200px;
-  display: block;
-  background: #fff;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  margin-bottom: 30px;
-  position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  
-}
-
-.mini .mini-content .mini-box:hover {
-  margin-top: -10px;
-}
-
-.mini .mini-content .mini-box:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  background: #fff;
-  width: 100%;
-  opacity: .15;
-  height: 100%;
-  bottom: -10px;
-  left: 0px;
-  right: -20px;
-  margin: auto;
-  border-radius: 20px;
-}
-
-.mini .mini-content .mini-box i {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.mini .mini-content .mini-box span {
-  display: block;
-  font-weight: 500;
-  font-size: 11px;
-  color: #777;
-  letter-spacing: .75px;
-}
-
-.mini .mini-content .mini-box strong {
-  display: block;
-  font-weight: 400;
-  font-size: 17px;
-  color: #1e1e1e;
-  letter-spacing: 0.25px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
 
 .counter {
   overflow: hidden;
