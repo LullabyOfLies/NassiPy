@@ -1,0 +1,100 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#process-container {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid black;
+  padding: 2%;
+  background-color: beige;
+}
+
+.process-symbol {
+  width: flex;
+  height: flex;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#python-container {
+  position: static;
+  height: 500px;
+  top: calc(50% - 663px/2 + 85.5px);
+  border: 1px solid black;
+  background: #D9D9D9;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+    
+  input[type="text"] {
+    width: fit-content;
+    justify-self: auto;
+    height: 50%;
+    margin: 1%;
+  }
+
+  button {
+  margin-top: -2px;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 2px 2px rgb(65, 105, 225);
+  }
+
+  button:hover {
+  transition: 0.5s;
+  background-color: royalblue;
+  }
+
+.convertbtn {
+position: static;
+width: 130px;
+height: 50px;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.header{
+  background-color: chocolate;
+  height: 7.5vh;
+  margin-bottom: 15px;
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white;
+  }
+
+  ul li a:hover {
+    background-color: white;
+    color: black;
+  }
