@@ -57,7 +57,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, h4{
-  font-family: 'Lato', 'PT Serif';
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   background-color: #3b2f3c;
   font-size: 16px;
@@ -67,10 +67,10 @@ html, h4{
 }
 
 body{
-  font-family: 'Lato', 'PT Serif';
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
-  background: linear-gradient(320deg, #eb92be, #ffef78, #63c8b4);
-  /* background-color: #3b2f3c; */
+  background: linear-gradient(to bottom, #101226, #111326, #131426, #141526, #151626, #1c1d2f, #232439, #2b2b43, #3b3b5a, #4d4c72, #5f5d8a, #726fa4);
+  
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -557,16 +557,15 @@ header
   /* background: #417c6e; */
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background-color: #11BA98;
-  /* background: rgba(255, 255, 255, 0.75); */
+  background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 40px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background-color: #11BA98;
-  /* background: rgba(255, 255, 255, 0.30); */
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.30);
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
 }
@@ -625,7 +624,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #ff589e;
+  color: white;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -643,14 +642,14 @@ header
   align-items: center;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgb(16, 18, 38);
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
+  background:rgb(16, 18, 38);
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
   color: white;
@@ -761,7 +760,9 @@ header
 }
 
 .header-area.header-sticky .nav li a {
-  color: #1e1e1e;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.625rem, 0.2344rem + 1.25vw, 0.9375rem);
+  color: #0F1426;
 }
 
 
@@ -867,23 +868,29 @@ welcome
 }
 
 .typing-demo {
+  display: flex;
+  padding: 5px;
   width: 20ch;
   animation: typing 5s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);
+  color: #F5FFFA	;
 }
 
 .typing-demo1 {
-  width: 30ch;
+  display: flex;
+  padding: 5px;
+  width: 32ch;
   animation: typing 5s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);
+  color: #F5FFFA	;
 }
 
 
@@ -916,17 +923,17 @@ welcome
   margin-right: 50px;
   margin-left: 50px;
   padding: 10px;
-  backdrop-filter: blur(5.5px);
+  /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.30); */
+  border: 3px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
   
 }
@@ -955,8 +962,8 @@ welcome
   align-items: center;
   position: relative;
   font-size: clamp(1.875rem, 1.4844rem + 1.25vw, 2.1875rem);
-   font-family: 'PT Serif', serif; 
-  color: black; letter-spacing: 5px; text-indent: 5px; 
+  font-family: 'Lato', sans-serif;
+  color: #F5FFFA; letter-spacing: 5px; text-indent: 5px; 
   padding-left: 10px;
   
   
@@ -1075,20 +1082,28 @@ welcome
 
 }
 .mini .mini-content .container .introduce{
-  
+
   display: grid;
-  backdrop-filter: blur(5.5px);
+  /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.30); */
+  border: 3px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
+}
+
+@media (max-width: 540px) {
+
+  .mini .mini-content .container p{
+    flex-direction: column;
+    
+  }
 }
 
 
@@ -1105,27 +1120,48 @@ welcome
   
 }
 
+@media (max-width: 540px) {
+
+  .mini .mini-content .container .introduce .introduce1 p, .mini .mini-content .container .introduce .introduce1 p, .mini .mini-content .container .introduce .introduce0 h1, .typing-demo {
+    flex-direction: column;
+  }
+}
 
 .mini .mini-content .container .introduce .introduce1 p {
+  display: flex;
   letter-spacing: 1px;
   margin-bottom: 40px;
   letter-spacing: 0.25px;
   line-height: 26px;
   font-weight: 400;
   font-size: clamp(0.8125rem, 0.4219rem + 1.25vw, 1.125rem);
-  color: black;
+  margin: 10px; 
+  padding: 10px; 
+  color: #F5FFFA;
   
 }
 
 .mini .mini-content .container .introduce .introduce2 p {
+  display: flex;
   letter-spacing: 1px;
   margin-bottom: 40px;
   letter-spacing: 0.25px;
   line-height: 26px;
   font-weight: 400;
   font-size: clamp(0.8125rem, 0.4219rem + 1.25vw, 1.125rem);
-  color: black;
+  color: #F5FFFA;
+  margin: 10px; 
+  padding: 10px; color: #F5FFFA;
   
+}
+.mini .mini-content .container .introduce .introduce3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mini .mini-content .container .introduce .introduce3 p{
+  margin: 10px; padding-left: 10px; color: #F5FFFA;
+  font-size: clamp(0.8125rem, 0.4219rem + 1.25vw, 1.125rem);
 }
 
 .mini .mini-content .info p span {
@@ -1229,7 +1265,7 @@ features
 */
 /* section container css start */
 .container .row .section-title{
-  color: black; 
+  
   border-radius: 15px; 
   display: flex;
   padding: 10px;
@@ -1238,19 +1274,22 @@ features
   /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   background: rgba(255, 255, 255, 0.75); */
-  border: 2px solid rgba (255, 255, 255, 0.1);
+  /* border-top: 2px solid rgba (255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34);
   border-radius: 16px;
   box-shadow: 0 5px 40px rgba(35, 35, 35, 0.1);
-  color: #232323;
+  color: #232323; */
   /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.30); */
-  border: 2px solid rgba(255, 255, 255, 0.34);
+  /* border-top: 2px solid rgba(255, 255, 255, 0.34);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34); */
   flex-basis: auto;
   margin: 10px;
+  color: #F5FFFA;
 }
  .left-text p{
-  color: black; 
+  color: #F5FFFA	;
   border-radius: 15px; 
   display: flex;
   padding: 10px;
@@ -1262,16 +1301,16 @@ features
 
 /* "Unlock" vid start*/
 #features0 .row{
-  backdrop-filter: blur(5.5px);
+  /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.30); */
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
   margin: 10px;
@@ -1280,16 +1319,16 @@ features
 
 /* "Revolutionize" vid start*/
 #features1 .row{
-  backdrop-filter: blur(5.5px);
+  /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.30); */
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
   margin: 10px;
@@ -1298,15 +1337,15 @@ features
 .features-small-item {
   cursor: pointer;
   display: block;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
-  background: rgba(255, 255, 255, 0.75);
+  /* box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.30); */
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
   padding: 30px;
@@ -1317,11 +1356,11 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
-  color: black;
+  color: #F5FFFA	;
 }
 
 .features-small-item p{
-  color: black;
+  color: #F5FFFA	;
   font-weight: 400;
   font-size: clamp(0.8125rem, 0.4219rem + 1.25vw, 1.125rem);
   font-weight: 400;
@@ -1415,19 +1454,19 @@ video {
 .home-feature .inform p{
   
   display: grid;
-  backdrop-filter: blur(5.5px);
+  /* backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75); */
   border: 1px solid rgba (255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #232323;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.30); */
   border: 1px solid rgba(255, 255, 255, 0.34);
   flex-basis: auto;
-  color: black;
+  color: #F5FFFA	;
   padding: 10px;
   font-size: clamp(0.9375rem, 0.1563rem + 2.5vw, 1.5625rem);
   
@@ -1787,6 +1826,8 @@ footer
 footer {
   background-image: transparent;
   padding-top: 30px;
+  border-top-style: outset;
+  
 }
 
 footer .social {
