@@ -69,7 +69,10 @@ html, h4{
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  background: linear-gradient(to bottom, #101226, #111326, #131426, #141526, #151626, #1c1d2f, #232439, #2b2b43, #3b3b5a, #4d4c72, #5f5d8a, #726fa4);
+  /* background: linear-gradient(to bottom, #101226, #111326, #131426, #141526, #151626, #1c1d2f, #232439, #2b2b43, #3b3b5a, #4d4c72, #5f5d8a, #726fa4); */
+  background-color: #332449;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23c3abea' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+  
   
   font-size: 16px;
   -ms-text-size-adjust: 100%;
@@ -632,6 +635,7 @@ header
   height: 40px;
   line-height: 40px;
   border: transparent;
+  border-radius: 16px;
   letter-spacing: 1px;
 }
 
@@ -643,14 +647,14 @@ header
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   background: rgb(16, 18, 38);
-  border: 1px solid rgba (255, 255, 255, 0.1);
+  /* border: 1px solid rgba (255, 255, 255, 0.1); */
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  /* box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); */
   color: #232323;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   background:rgb(16, 18, 38);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  /* border: 1px solid rgba(255, 255, 255, 0.34); */
   flex-basis: auto;
   color: white;
 }
@@ -852,8 +856,6 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover; 
   padding-bottom: 100px;
 
@@ -1620,7 +1622,7 @@ functioning
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.25px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   width: 180px;
   height: 40px;
   line-height: 40px;
